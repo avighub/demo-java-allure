@@ -1,5 +1,6 @@
 name: Run tests and generate allure report
 on:
+  workflow_dispatch:
   pull_request:
     types:
       - opened
@@ -40,6 +41,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         if: always()
         with:
-          github_token: $
+          github_token: ${{ secrets.MY_GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: allure-history
