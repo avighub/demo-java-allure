@@ -10,7 +10,7 @@ public class DemoTests {
 
     @Test
     public void sampleTestTwo(){
-        Assert.assertEquals(4,5);
+        Assert.assertEquals(5,5);
     }
 
 
@@ -21,6 +21,6 @@ public class DemoTests {
 
     @Test
     public void sampleTestFour(){
-        Assert.assertEquals(5,5);
+        Assert.assertEquals(4,5);
     }
 }
